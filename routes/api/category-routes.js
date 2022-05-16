@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
             }]
         })
         .then(dbCategoryData => {
-            res.status(400).json(dbCategoryData);
+            res.status(200).json(dbCategoryData);
         }).catch(err => {
             console.log(err);
             res.status(500).json(err);
@@ -38,7 +38,7 @@ router.get('/:id', (req, res) => {
                 res.status(404).json({ message: "No category found with that id." })
                 return;
             }
-            res.json(dbCategoryData);
+            res.status(200).json(dbCategoryData);
         }).catch(err => {
             console.log(err);
             res.status(500).json(err);

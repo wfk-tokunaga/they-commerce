@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
             }
         ]
     }).then(dbProductData => {
-        res.status(400).json(dbProductData);
+        res.status(200).json(dbProductData);
     }).catch(err => {
         console.log(err);
         res.status(500).json(err);
@@ -74,6 +74,8 @@ router.post('/', (req, res) => {
                         tag_id,
                     };
                 });
+                // console.log('\nTEST 2\n');
+                // console.log('PRODUCTTAGARR' + JSON.stringify(productTagIdArr) + '\n');
                 return ProductTag.bulkCreate(productTagIdArr);
             }
             // if no product tags, just respond
