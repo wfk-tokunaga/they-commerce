@@ -25,13 +25,17 @@ npm start
 
 View all categories:
 request: 
+```
 GET http://localhost:{PORT}/api/categories/
+```
 body:
 N/A
 
 View specific category by ID:
 request: 
+```
 GET http://localhost:{PORT}/api/categories/{category-id}
+```
 body:
 N/A
 
@@ -61,13 +65,17 @@ N/A
 
 View all products:
 request: 
+```
 GET http://localhost:{PORT}/api/products/
+```
 body:
 N/A
 
 View specific product by ID:
 request: 
+```
 GET http://localhost:{PORT}/api/products/{product-id}
+```
 body:
 N/A
 
@@ -102,13 +110,17 @@ N/A
 
 View all tags:
 request: 
+```
 GET http://localhost:{PORT}/api/tags/
+```
 body:
 N/A
 
 View specific tag by ID:
 request: 
+```
 GET http://localhost:{PORT}/api/tags/{tag-id}
+```
 body:
 N/A
 
@@ -145,9 +157,3 @@ None
 ## Author
 Eika Tokunaga
 wktokunaga@gmail.com
-
-Video Guide 1 of 2:
-https://drive.google.com/file/d/1hlCpYufC2mFkdZvwJF_IpPC8IYnihx_p/view
-
-Video Example 2 of 2:
-https://drive.google.com/file/d/1heWr6iEd7C0lGulRcozbVGmXd7KSQ5q0/view
