@@ -24,7 +24,6 @@ npm start
 ### Categories
 
 View all categories:
-request: 
 ```
 GET http://localhost:{PORT}/api/categories/
 ```
@@ -32,31 +31,32 @@ body:
 N/A
 
 View specific category by ID:
-request: 
 ```
 GET http://localhost:{PORT}/api/categories/{category-id}
 ```
-body:
-N/A
 
 Create a category:
-request: 
+ 
+```
 POST http://localhost:{PORT}/api/categories/
-body:
 {
 	"category_name": "{New Category Name}"
 }
+```
 
 Update a category by ID:
+```
 PUT http://localhost:{PORT}/api/categories/{category-id}
+```
 body:
 {
 	"category_name": "{New Category Name}"
 }
 
 Delete a category by ID:
-request:
+```
 DELETE http://localhost:{PORT}/api/categories/{category-id}
+```
 body:
 N/A
 
@@ -64,7 +64,7 @@ N/A
 ### Products
 
 View all products:
-request: 
+ 
 ```
 GET http://localhost:{PORT}/api/products/
 ```
@@ -72,7 +72,7 @@ body:
 N/A
 
 View specific product by ID:
-request: 
+ 
 ```
 GET http://localhost:{PORT}/api/products/{product-id}
 ```
@@ -80,8 +80,10 @@ body:
 N/A
 
 Create a product:
-request: 
+ 
+```
 POST http://localhost:{PORT}/api/products/
+```
 body:
 {
 		"product_name": "{New Product Name}",
@@ -91,7 +93,9 @@ body:
 }
 
 Update a product by ID:
+```
 PUT http://localhost:{PORT}/api/products/{product-id}
+```
 body:
 {
 		"product_name": "{Updated Name}",
@@ -101,15 +105,17 @@ body:
 }
 
 Delete a product by ID:
-request:
+
+```
 DELETE http://localhost:{PORT}/api/products/{product-id}
+```
 body:
 N/A
 
 ### Tags
 
 View all tags:
-request: 
+ 
 ```
 GET http://localhost:{PORT}/api/tags/
 ```
@@ -117,7 +123,7 @@ body:
 N/A
 
 View specific tag by ID:
-request: 
+ 
 ```
 GET http://localhost:{PORT}/api/tags/{tag-id}
 ```
@@ -125,23 +131,29 @@ body:
 N/A
 
 Create a tag:
-request: 
+ 
+```
 POST http://localhost:{PORT}/api/tags/
+```
 body:
 {
 	"tag_name": "{Nea Tag Name}"
 }
 
 Update a tag by ID:
+```
 PUT http://localhost:{PORT}/api/tags/{tag-id}
+```
 body:
 {
 		"tag_name": "{Updated Tag Name}",
 }
 
 Delete a tag by ID:
-request:
+
+```
 DELETE http://localhost:{PORT}/api/tags/{tag-id}
+```
 body:
 N/A
 
