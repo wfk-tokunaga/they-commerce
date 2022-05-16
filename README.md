@@ -71,10 +71,10 @@ GET http://localhost:{PORT}/api/products/{product-id}
 ```
 POST http://localhost:{PORT}/api/products/
 {
-		"product_name": "{New Product Name}",
-		"price": {Product Price},
-		"stock": {Product Stock},
-		"tagIds": [{Associated Tags}]
+    "product_name": "{New Product Name}",
+    "price": {Product Price},
+    "stock": {Product Stock},
+    "tagIds": [{Associated Tags}]
 }
 ```
 
@@ -82,10 +82,10 @@ POST http://localhost:{PORT}/api/products/
 ```
 PUT http://localhost:{PORT}/api/products/{product-id}
 {
-		"product_name": "{Updated Name}",
-		"price": {Updated Price},
-		"stock": {Updated Stock},
-		"tagIds": [{Updated Tags}]
+    "product_name": "{Updated Name}",
+    "price": {Updated Price},
+    "stock": {Updated Stock},
+    "tagIds": [{Updated Tags}]
 }
 ```
 
@@ -118,7 +118,7 @@ POST http://localhost:{PORT}/api/tags/
 ```
 PUT http://localhost:{PORT}/api/tags/{tag-id}
 {
-		"tag_name": "{Updated Tag Name}",
+	"tag_name": "{Updated Tag Name}",
 }
 ```
 
