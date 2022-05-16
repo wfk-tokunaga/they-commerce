@@ -23,20 +23,17 @@ npm start
 
 ### Categories
 
-View all categories:
+#### View all categories:
 ```
 GET http://localhost:{PORT}/api/categories/
 ```
-body:
-N/A
 
-View specific category by ID:
+#### View specific category by ID:
 ```
 GET http://localhost:{PORT}/api/categories/{category-id}
 ```
 
-Create a category:
- 
+#### Create a category:
 ```
 POST http://localhost:{PORT}/api/categories/
 {
@@ -44,118 +41,91 @@ POST http://localhost:{PORT}/api/categories/
 }
 ```
 
-Update a category by ID:
+#### Update a category by ID:
 ```
 PUT http://localhost:{PORT}/api/categories/{category-id}
-```
-body:
 {
 	"category_name": "{New Category Name}"
 }
+```
 
-Delete a category by ID:
+#### Delete a category by ID:
 ```
 DELETE http://localhost:{PORT}/api/categories/{category-id}
 ```
-body:
-N/A
 
 
 ### Products
 
-View all products:
- 
+#### View all products:
 ```
 GET http://localhost:{PORT}/api/products/
 ```
-body:
-N/A
 
-View specific product by ID:
- 
+#### View specific product by ID:
 ```
 GET http://localhost:{PORT}/api/products/{product-id}
 ```
-body:
-N/A
 
-Create a product:
- 
+#### Create a product:
 ```
 POST http://localhost:{PORT}/api/products/
-```
-body:
 {
 		"product_name": "{New Product Name}",
 		"price": {Product Price},
 		"stock": {Product Stock},
 		"tagIds": [{Associated Tags}]
 }
+```
 
-Update a product by ID:
+#### Update a product by ID:
 ```
 PUT http://localhost:{PORT}/api/products/{product-id}
-```
-body:
 {
 		"product_name": "{Updated Name}",
 		"price": {Updated Price},
 		"stock": {Updated Stock},
 		"tagIds": [{Updated Tags}]
 }
+```
 
-Delete a product by ID:
-
+#### Delete a product by ID:
 ```
 DELETE http://localhost:{PORT}/api/products/{product-id}
 ```
-body:
-N/A
 
 ### Tags
 
-View all tags:
- 
+#### View all tags:
 ```
 GET http://localhost:{PORT}/api/tags/
 ```
-body:
-N/A
 
-View specific tag by ID:
- 
+#### View specific tag by ID:
 ```
 GET http://localhost:{PORT}/api/tags/{tag-id}
 ```
-body:
-N/A
 
-Create a tag:
- 
+#### Create a tag:
 ```
 POST http://localhost:{PORT}/api/tags/
-```
-body:
 {
-	"tag_name": "{Nea Tag Name}"
+	"tag_name": "{New Tag Name}"
 }
+```
 
-Update a tag by ID:
+#### Update a tag by ID:
 ```
 PUT http://localhost:{PORT}/api/tags/{tag-id}
-```
-body:
 {
 		"tag_name": "{Updated Tag Name}",
 }
+```
 
-Delete a tag by ID:
-
+#### Delete a tag by ID:
 ```
 DELETE http://localhost:{PORT}/api/tags/{tag-id}
 ```
-body:
-N/A
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
