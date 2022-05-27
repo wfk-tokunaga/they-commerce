@@ -1,6 +1,6 @@
 # They-Commerce
 
-They-Commerce is the backend of a e-commerce site that uses Express.js, Sequelize, and MySql.
+They-Commerce is the backend of a e-commerce site that uses Express.js, Sequelize, and MySQL.
 
 ## Video Guides
 
